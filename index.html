@@ -1,63 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka Photography</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-    <nav>
-        <div class="logo">Priyanka Photography</div>
-        <ul>
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="progress-bar"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <h1>Priyanka Photography</h1>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Priyanka Photography
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <button id="themeBtn">🌙</button>
+
     </nav>
 
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
-            <h1>Capturing Life's Beautiful Moments</h1>
-            <p>Professional Photography for Weddings, Portraits & Events</p>
-            <a href="#gallery" class="btn">View Portfolio</a>
+
+            <h1>
+                <span id="typing-text">
+                    Capturing Moments That Last Forever
+                </span>
+            </h1>
+
+            <p>
+                Wedding • Portrait • Lifestyle • Events
+            </p>
+
+            <a href="#gallery" class="btn">
+                Explore Portfolio
+            </a>
+
         </div>
+
     </section>
 
-    <section id="gallery" class="gallery">
-        <h2>My Portfolio</h2>
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="150">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Photos Captured</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Events Covered</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="5">0</h2>
+            <p>Years Experience</p>
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services reveal">
+
+        <h2>My Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Wedding Photography</h3>
+                <p>
+                    Capturing every precious wedding moment beautifully.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Portrait Photography</h3>
+                <p>
+                    Professional portraits with creative lighting and editing.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Event Photography</h3>
+                <p>
+                    Birthday parties, college events and corporate functions.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery reveal">
+
+        <h2>Featured Work</h2>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+
+            <button data-filter="all">All</button>
+            <button data-filter="wedding">Wedding</button>
+            <button data-filter="portrait">Portrait</button>
+            <button data-filter="nature">Nature</button>
+
+        </div>
 
         <div class="gallery-container">
-            <img src="images/wedding1.jpg">
-            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=500" alt="">
-            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=500" alt="">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500" alt="">
-            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500" alt="">
-            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500" alt="">
+
+            <img class="gallery-item nature"
+                src="images/nature1.jpg"
+                alt="Nature">
+
+            <img class="gallery-item portrait"
+                src="images/portrait1.jpg"
+                alt="Portrait">
+
+            <img class="gallery-item wedding"
+                src="images/wedding1.jpg"
+                alt="Wedding">
+
+            <img class="gallery-item portrait"
+                src="images/house1.jpg"
+                alt="House">
+
+            <img class="gallery-item nature"
+                src="images/monument1.jpg"
+                alt="Monument">
+
+            <img class="gallery-item nature"
+                src="images/animal1.jpg"
+                alt="Animal">
+
         </div>
+
     </section>
 
-    <section id="about" class="about">
-        <div class="about-content">
+    <!-- ABOUT -->
+    <section id="about" class="about reveal">
+
+        <div class="about-image">
+
+            <img src="images/Priyanka Pic.jpeg"
+                alt="Priyanka Kumari">
+
+        </div>
+
+        <div class="about-text">
+
             <h2>About Me</h2>
+
             <p>
-                Hi, I'm Priyanka Kumari, an MCA student specializing in AI & ML and a passionate photographer.
-                I love capturing beautiful moments, emotions, and stories through my camera lens.
-                My goal is to create timeless memories that people can cherish forever.
+                Hi, I'm Priyanka Kumari, an MCA student specializing
+                in AI & ML and a passionate photographer.
+
+                I love capturing emotions, stories and unforgettable
+                moments through photography.
+
+                My goal is to preserve memories that people can
+                cherish forever.
             </p>
+
         </div>
+
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+    <!-- SKILLS -->
+    <section class="skills reveal">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="skill">
+                <span>Photography</span>
+                <div class="bar">
+                    <div class="fill" style="width:95%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Photo Editing</span>
+                <div class="bar">
+                    <div class="fill" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="bar">
+                    <div class="fill" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Java</span>
+                <div class="bar">
+                    <div class="fill" style="width:80%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials reveal">
+
+        <h2>Client Reviews</h2>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial">
+                <p>"Amazing photography and beautiful editing."</p>
+                <h4>★★★★★</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Captured our wedding perfectly."</p>
+                <h4>★★★★★</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Professional and creative work."</p>
+                <h4>★★★★★</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal">
+
+        <h2>Get In Touch</h2>
+
         <p>Email: priyankatwari898621@gmail.com</p>
         <p>Location: Panchkula, Haryana, India</p>
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <div class="social-links">
+
+            <a href="https://github.com/Priyankagitkumarihubbit784" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/priyanka-kumari-88062424a/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/glow_and_grow_daily/" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
     </section>
 
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+
+        <span id="closeBtn">&times;</span>
+
+        <img id="lightboxImg" alt="Preview">
+
+    </div>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/919350602295?text=Hello%20Priyanka%2C%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services."
+        class="whatsapp-btn"
+        target="_blank">
+ <i class="fab fa-whatsapp"></i>
+
+    <span class="tooltip">
+        Chat with Me
+    </span>
+
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Priyanka Photography.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
 </body>
-<footer>
-    <p>© 2026 Priyanka Photography. All Rights Reserved.</p>
-</footer>
+
 </html>
